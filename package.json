@@ -1,0 +1,24 @@
+{
+  "name": "city-explorer-api",
+  "version": "1.0.0",
+  "description": "API Server for the City Explorer App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Micha-L-Davis/city-explorer-api.git"
+  },
+  "author": "Micha Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Micha-L-Davis/city-explorer-api/issues"
+  },
+  "homepage": "https://github.com/Micha-L-Davis/city-explorer-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}
