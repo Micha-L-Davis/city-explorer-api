@@ -28,25 +28,25 @@ Actual time needed to complete: 18min
 
 Name of feature: #2 - Weather placeholder data
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1hr
 
-Start time: _____
+Start time: 2/22/2022 @2:45
 
-Finish time: _____
+Finish time: 2/22/2022 @4:15
 
-Actual time needed to complete: _____
+Actual time needed to complete: 90min
 
 ---
 
 Name of feature: #3 - Error handling
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 45min
 
-Start time: _____
+Start time: 2/22/2022 @4:15
 
-Finish time: _____
+Finish time: 2/22/2022 @5:15
 
-Actual time needed to complete: _____
+Actual time needed to complete: 60min
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+* Collab with Rey Mercado on WRRC diagram
