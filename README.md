@@ -11,7 +11,7 @@ Data queries can be made in the app. There is no need to request data directly f
 
 ## Architecture
 Express, Cors, Dotenv, JavaScript
-![Web Request Response Cycle](./wrrc-lab09.png)
+![Web Request Response Cycle](./wrrc-lab9.png)
 
 ## Change Log
 Name of feature: #1 - Set up server repository
