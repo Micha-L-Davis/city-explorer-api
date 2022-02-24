@@ -23,8 +23,8 @@ app.get('/weather', async (request, response) => {
     let wxObject = wxData.data.data;
 
     let requestedWx = [];
-    for(let i = 0; i < wxObject.data.length; i++){
-      requestedWx.push(new Forecast(wxObject.data[i]));
+    for(let i = 0; i < wxObject.length; i++){
+      requestedWx.push(new Forecast(wxObject[i]));
     }
     response.send(requestedWx);
   }
@@ -33,10 +33,40 @@ app.get('/weather', async (request, response) => {
   }
 });
 
+app.get('/movies', async (request, response) => {
+  let location=request.query.location;
+  let moviesURL = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&query=${location}`;
+
+  try{
+    let movieData = await axios.get(moviesURL);
+
+    let fullData = [];
+    for(let i = 1; i <= movieData.data.total_pages; i++){
+      let currentPage = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&query=${location}&page=${i}`);
+      currentPage.data.results.forEach((result) => fullData.push(result));
+    }
+    fullData.sort((a, b) => b.popularity - a.popularity);
+
+    let sortedMovies = new Movie(fullData);
+
+    response.send(sortedMovies);
+  }
+  catch (error){
+    response.status(500).send(error.message);
+  }
+
+});
+
 class Forecast {
   constructor(wxData) {
     this.description = `Low of ${wxData.low_temp}, high of ${wxData.high_temp} with ${wxData.weather.description.toLowerCase()}`;
     this.date = `${wxData.datetime}`;
+  }
+}
+
+class Movie {
+  constructor(movieData) {
+    this.movies = movieData.slice(0, 20);
   }
 }
 
