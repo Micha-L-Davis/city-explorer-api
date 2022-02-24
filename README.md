@@ -85,4 +85,6 @@ Finish time: 2/24/2022 @2:00
 Actual time needed to complete: 60min
 
 ## Credit and Collaborations
+* [The Movie Database](https://themoviedb.org)
+* [Weatherbit](https://weatherbit.io)
 * Collab with Rey Mercado, Michael Campbell, Matt Rangel on WRRC diagram
