@@ -27,11 +27,10 @@ function getMovies(request, response) {
         return fullData;
       })
       .then(fullData => fullData.sort((a, b) => b.popularity - a.popularity))
-      .then(fullData => new Movie(fullData))
-      .then(sortedMovies => {
-        cache[key].data = sortedMovies;
-        console.log(sortedMovies);
-        response.send(sortedMovies);
+      .then(sortedData => new Movie(sortedData))
+      .then(movies => {
+        cache[key].data = movies;
+        response.send(movies);
       })
       .catch(error => response.send(error.message));
   }
@@ -46,17 +45,6 @@ async function getAllPages(url, pages) {
   }
   return fullData;
 }
-
-// function parseMovies(moviesData) {
-//   try {
-//     const movieTitles = moviesData.data.map(movie => {
-//       return new Movie(movie);
-//     });
-//     return Promise.resolve(movieTitles);
-//   } catch (error) {
-//     return Promise.reject(error);
-//   }
-// }
 
 class Movie {
   constructor(movieData) {
