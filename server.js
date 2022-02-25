@@ -22,13 +22,4 @@ function weatherHandler(request, response) {
 
 app.get('/movies', movies);
 
-// function moviesHandler(request, response) {
-//   movies(request.query)
-//     .then(summaries => response.send(summaries))
-//     .catch(error => {
-//       console.error(error);
-//       response.status(500).send('Movie data unavailable!');
-//     });
-// }
-
 app.listen(process.env.PORT, () => console.log(`Server up on ${process.env.PORT}`));
