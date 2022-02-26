@@ -1,7 +1,7 @@
 # City Explorer API
 
 **Author**: Micha Davis
-**Version**: 1.3.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.4.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 This server stores and retrieves data for the [City Explorer](https://github.com/Micha-L-Davis/city-explorer) app.
