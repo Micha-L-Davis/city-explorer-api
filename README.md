@@ -84,7 +84,20 @@ Finish time: 2/24/2022 @2:00
 
 Actual time needed to complete: 60min
 
+---
+
+Name of feature: #7 - Cache API data
+
+Estimate of time needed to complete: 60min
+
+Start time: 2/24/2022 @1:45
+
+Finish time: 2/24/2022 @3:45
+
+Actual time needed to complete: 120min
+
 ## Credit and Collaborations
 * [The Movie Database](https://themoviedb.org)
 * [Weatherbit](https://weatherbit.io)
-* Collab with Rey Mercado, Michael Campbell, Matt Rangel on WRRC diagram
+* Collab with Rey Mercado, Michael Campbell, Matt Rangel, Dan Brian on WRRC diagrams
+* Extra help from Ryan Gallaway in helping me keep my `promise`s.
